@@ -67,7 +67,7 @@ async def cb_start(_, query: CallbackQuery):
                     "• Cᴏᴍᴍᴀɴᴅs", callback_data="cb_cmd"),],
                 [
                     InlineKeyboardButton("• Oᴡɴᴇʀ", url=f"https://t.me/{OWNER_NAME}"),
-                    InlineKeyboardButton("• REPO", url=f"https://t.me/beta_bot_updates/157"),
+                    InlineKeyboardButton("• REPO", url=f"https://github.com/BETA-OFFICIAL/BETA-MUSICBOT"),
                 ],
                 [
                     InlineKeyboardButton(
