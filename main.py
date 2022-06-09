@@ -1,6 +1,6 @@
 import asyncio
 from pytgcalls import idle
-from Beta.Abhishek import SUPPORT
+from Beta.jeol import SUPPORT
 from Beta.main import call_py, bot, user as Herox
 
 async def start_bot():
