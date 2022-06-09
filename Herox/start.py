@@ -68,7 +68,7 @@ async def start_private(client: Client, message: Message):
                     "• Cᴏᴍᴍᴀɴᴅs", callback_data="cb_cmd"),],
                 [
                     InlineKeyboardButton("• Oᴡɴᴇʀ", url=f"https://t.me/{OWNER_NAME}"),
-                    InlineKeyboardButton("• Repo", url=f"https://t.me/beta_bot_updates/157"),
+                    InlineKeyboardButton("• Repo", url=f"https://github.com/BETA-OFFICIAL/BETA-MUSICBOT"),
                 ],
                 [
                     InlineKeyboardButton(
