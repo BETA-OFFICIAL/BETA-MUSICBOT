@@ -1,5 +1,5 @@
 from SJM.Cache.admins import admins
-from TrickyAbhi.main import call_py
+from Beta.main import call_py
 from pyrogram import Client, filters
 from SJM.decorators import authorized_users_only
 from SJM.filters import command, other_filters
@@ -414,4 +414,4 @@ async def change_volume(client, m: Message):
         await m.reply("💬 **nothing in streaming**")
         
         
-        # whats up  by Herox
+        # whats up  by Beta
