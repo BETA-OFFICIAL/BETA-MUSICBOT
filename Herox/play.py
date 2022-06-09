@@ -16,7 +16,7 @@ from PIL import Image, ImageDraw, ImageFont
 from config import ASSISTANT_NAME, BOT_USERNAME, IMG_1, IMG_2, IMG_5
 from SJM.filters import command, other_filters
 from SJM.queues import QUEUE, add_to_queue
-from TrickyAbhi.main import call_py, user
+from Beta.main import call_py, user
 from SJM.utils import bash
 from pyrogram import Client
 from pyrogram.errors import UserAlreadyParticipant, UserNotParticipant
