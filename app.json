@@ -1,0 +1,94 @@
+{
+    "name": "Beta-Music",
+    "logo": "",
+    "description": "Beta-Music allow you to stream music trought the telegram voice chat feature.",
+    "keywords": [
+        "music bot", 
+        "voice chat", 
+        "telegram"
+    ],
+    "repository": "https://github.com/Jeolpaul/BETA-MUSICBOT",
+    "stack": "container",
+    "env": {
+        "SESSION_NAME": {
+            "description": "fill with the pyrogram session string. Generate Thorough @Sessionstring_genbot",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "fill with your bot token from @BotFather",
+            "required": true
+        },
+        "BOT_USERNAME": {
+            "description": "fill with your bot username from @BotFather Note put without '@' ",
+            "required": true
+        },
+        "OWNER_NAME": {
+            "description": "fill YOUR USERNAME WITHOUT '@' .",
+            "value": "",
+            "required": false
+        },
+        "ALIVE_NAME": {
+            "description": "PUT YOUR BOT NAME .",
+            "value": "",
+            "required": false
+            
+        },
+         "BOT_NAME": {
+            "description": "PUT YOUR BOT NAME.",
+            "value": "",
+            "required": true
+        },
+         "DURATION_LIMIT": {
+            "description": "PUT YOUR BOT duration time.",
+            "value": "70",
+            "required": true
+        },
+        "GROUP_SUPPORT": {
+            "description": "PUT YOUR group username without @.",
+            "value": "",
+            "required": true
+        },
+        "UPDATES_CHANNEL": {
+            "description": "PUT YOUR channel username without @.",
+            "value": "",
+            "required": true
+        },
+    
+        "API_ID": {
+            "description": "your Api ID from my.telegram.org/apps",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "your Api Hash from my.telegram.org/apps",
+            "required": true
+        },
+        "ASSISTANT_NAME": {
+            "description": "fill with the assistant username without @",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "fill with the user id who can access all function in your bot (separate with space) .",
+            "value": "",
+            "required": true
+        }
+        
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
