@@ -1,4 +1,4 @@
-# TrickyAbhi Created by Herox
+# Created by Beta
 
 import io
 from os import path
@@ -105,8 +105,8 @@ async def generate_cover(thumbnail, title, userid, ctitle):
     Image.alpha_composite(image5, image6).save(f"temp{userid}.png")
     img = Image.open(f"temp{userid}.png")
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("TrickyAbhi/finalfont.ttf", 60)
-    font2 = ImageFont.truetype("TrickyAbhi/finalfont.ttf", 70)     
+    font = ImageFont.truetype("Beta/finalfont.ttf", 60)
+    font2 = ImageFont.truetype("Beta/finalfont.ttf", 70)     
     draw.text((20, 45), f"{title[:30]}...", fill= "white", stroke_width = 1, stroke_fill="white", font=font2)
     draw.text((120, 595), f"Playing on: {ctitle[:20]}...", fill="white", stroke_width = 1, stroke_fill="white" ,font=font)
     img.save(f"final{userid}.png")
