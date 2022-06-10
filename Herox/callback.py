@@ -156,11 +156,8 @@ async def cb_advance(_, query: CallbackQuery):
 async def cb_fun(_, query: CallbackQuery):
     await query.edit_message_text(  
         f"""𝙁𝙪𝙣 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨
-• `/jeol` ✌🏻
-• `/beta`  😍
-• `/mkn`    ❤️
-• `/music`   🎵
-• `/vaazha` 🌱   
+
+No Fun Command exist vro It Will Update soon😁
 
 ⚡ Powered By [★彡 JEOL 彡★](https://t.me/JP_Jeol_org) .""",
         reply_markup=InlineKeyboardMarkup(
