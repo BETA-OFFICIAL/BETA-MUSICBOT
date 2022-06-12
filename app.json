@@ -18,6 +18,10 @@
             "description": "fill with your bot token from @BotFather",
             "required": true
         },
+        "DB_URL": {
+            "description": "fill it with your mongo db url",
+            "required": true
+        },
         "BOT_USERNAME": {
             "description": "fill with your bot username from @BotFather Note put without '@' ",
             "required": true
