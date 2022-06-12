@@ -7,4 +7,4 @@ if os.path.exists("local.env"):
 
 load_dotenv()
 admins = {}
-SUPPORT = getenv("SUPPORT", "beta_bot_updates")
+SUPPORT = getenv("SUPPORT", "")
