@@ -21,3 +21,9 @@
 ### No Need To Replace Forked Repo In readme.md
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://deployheroku.vercel.app/)
+
+## Config Vars
+
+1 'API_ID' =  From my.telegram.org/apps
+2 'API_HASH' = From my.telegram.org/apps
+3, 
