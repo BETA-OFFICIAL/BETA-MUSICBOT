@@ -27,7 +27,7 @@
 1. `API_ID` : Get it from my.telegram.org 
 2. `API_HASH`  : Get it from my.telegram.org 
 3. `BOT_TOKEN` : Get it from [@Botfather](http://t.me/BotFather) in Telegram
-4. `DB_URI` : Get mongo db [from here.](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/mongodb)
+4. `DB_URI` : Get mongo db [from here.](https://cloud.mongodb.com)
 5. `BOT_USERNAME` : Username Of Your Music Bot
 6. `BOT_NAME` : A name for your Music bot.
 7. `OWNER_NAME` : fill YOUR USERNAME WITHOUT '@' 
