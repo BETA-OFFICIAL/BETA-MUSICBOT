@@ -25,6 +25,7 @@ from pytgcalls import StreamType
 from pytgcalls.types.input_stream import AudioPiped
 from youtubesearchpython import VideosSearch
 import youtube_dl
+from config import BOT_NAME, BOT_USERNAME, GROUP_SUPPORT, OWNER_NAME, UPDATES_CHANNEL
 
 
 
@@ -131,8 +132,8 @@ async def play(c: Client, m: Message):
                       InlineKeyboardButton('⏭️', callback_data="skip"),
                       InlineKeyboardButton("▶️", callback_data="cbresume"),
                   ],[
-                      InlineKeyboardButton("• Cʜᴀɴɴᴇʟ", url=f"https://t.me/beta_bot_updates"),
-                      InlineKeyboardButton("• Group", url=f"https://t.me/BETA_BOTSUPPORT"),
+                      InlineKeyboardButton("• Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                      InlineKeyboardButton("• Group", url=f"https://t.me/{GROUP_SUPPORT}"),
                   ],[
                       InlineKeyboardButton("🗑 Close", callback_data="cls")],
                   ]
