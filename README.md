@@ -24,6 +24,23 @@
 
 ## Config Vars
 
-1 'API_ID' =  From my.telegram.org/apps
-2 'API_HASH' = From my.telegram.org/apps
-3, 
+1. `API_ID` : Get it from my.telegram.org 
+2. `API_HASH`  : Get it from my.telegram.org 
+3. `BOT_TOKEN` : Get it from [@Botfather](http://t.me/BotFather) in Telegram
+4. `DB_URI` : Get mongo db [from here.](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/mongodb)
+5. `BOT_USERNAME` : Username Of Your Music Bot
+6. `BOT_NAME` : A name for your Music bot.
+7. `OWNER_NAME` : fill YOUR USERNAME WITHOUT '@' 
+8. `SESSION_NAME` : Pyrogram Session Needed, Generate string from [BETA STRING BOT](http://t.me/Sessionstring_genbot) in Telegram.
+9. 'ALIVE_NAME' : Put Your Name
+10. 'DURATION_LIMIT' : PUT YOUR BOT duration time
+11. 'GROUP_SUPPORT' : PUT YOUR group username without @.
+12. 'UPDATES_CHANNEL' : PUT YOUR channel username without @
+13. 'ASSISTANT_NAME' : fill with the assistant username without @
+14. 'SUDO_USERS' : fill with the user id who can access all function in your bot (separate with space) 
+
+
+## Thanks For Here
+
+
+
