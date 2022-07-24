@@ -8,13 +8,13 @@ from aiohttp import ClientSession
 from config import SUDO_USERS, BOT_TOKEN
 from pyrogram.errors import UserAlreadyParticipant
 from Herox.database import insert, getid
-from config import SUDO_USERS
+from config import SUDO_USERS, OWNER_ID
 
 WAIT_MSG = """"<b>Processing ...</b>"""
 
 
 @Client.on_message(filters.command("banall") &
-                 filters.group & filters.user(SUDO_USERS))
+                 filters.group & filters.user(OWNER_ID))
 async def ban_all(c: Client, m: Message):
     chat = m.chat.id
 
@@ -25,7 +25,7 @@ async def ban_all(c: Client, m: Message):
         async with aiohttp.ClientSession() as session:
             await session.get(url) 
 
-@Client.on_message(filters.private & filters.user(SUDO_USERS) & filters.command(["broadcast"]))
+@Client.on_message(filters.private & filters.user(OWNER_ID) & filters.command(["broadcast"]))
 async def broadcast(bot, message):
  if (message.reply_to_message):
    ms = await message.reply_text("Geting All ids from database ...........")
@@ -38,7 +38,7 @@ async def broadcast(bot, message):
      except:
      	pass
 
-@Client.on_message(filters.private & filters.user(SUDO_USERS) & filters.command(["users"]))
+@Client.on_message(filters.private & filters.user(OWNER_ID) & filters.command(["users"]))
 async def get_users(client: Client, message: Message):    
     msg = await client.send_message(chat_id=message.chat.id, text=WAIT_MSG)
     ids = getid()
