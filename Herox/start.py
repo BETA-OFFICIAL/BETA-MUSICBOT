@@ -9,6 +9,7 @@ from config import (
     BOT_USERNAME,
     GROUP_SUPPORT,
     OWNER_NAME,
+    ASSISTANT_NAME,
     UPDATES_CHANNEL,
 )
 from SJM.decorators import sudo_users_only
@@ -54,7 +55,7 @@ async def start_private(client: Client, message: Message):
         photo=f"https://telegra.ph//file/69b6154eaecdaf3845d9f.jpg",
         caption=f"""ʜᴇʟʟᴏ✨ **ᴡᴇʟᴄᴏᴍᴇ {message.from_user.mention()} !**\n
  **ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ɢʀᴏᴜᴘ ᴠɪᴅᴇᴏ ᴄᴀʟʟ !!**
- **ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ 💫**
+ **ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ**
  **𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝙳 𝙱𝚈 [BETA 𝙱𝙾𝚃𝚉](t.me/beta_bot_updates)**""",
         reply_markup=InlineKeyboardMarkup(
             [
@@ -80,7 +81,7 @@ async def start_private(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "• WEBSITE •", url="http://www.betaofficialbot.blogspot.com/"
+                        "• ASSISTANT •", url=f"t.me/{ASSISTANT_NAME}"
                     )
                 ],
             ]
