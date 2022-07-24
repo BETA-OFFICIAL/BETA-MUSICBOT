@@ -1,3 +1,6 @@
+import os
+from os import getenv
+
 import asyncio
 from pytgcalls import idle
 
