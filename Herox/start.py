@@ -1,6 +1,7 @@
 from datetime import datetime
 from sys import version_info
 from time import time
+from Herox.database import insert
 
 from config import (
     ALIVE_IMG,
@@ -51,6 +52,7 @@ async def _human_time_duration(seconds):
     command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
 async def start_private(client: Client, message: Message):
+ insert(int(message.chat.id))
  await message.reply_photo(
         photo=f"https://telegra.ph//file/69b6154eaecdaf3845d9f.jpg",
         caption=f"""ʜᴇʟʟᴏ✨ **ᴡᴇʟᴄᴏᴍᴇ {message.from_user.mention()} !**\n
