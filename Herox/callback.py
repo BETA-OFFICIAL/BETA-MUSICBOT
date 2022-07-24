@@ -78,7 +78,7 @@ async def cb_start(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "• WEBSITE •", url="https://betaofficialbot.blogspot.com"
+                        "• ASSISTANT •", url=f"t.me/{ASSISTANT_NAME}"
                     )
                 ],
             ]
