@@ -241,14 +241,14 @@ async def play(c: Client, m: Message):
     else:
         if len(m.command) < 2:
          await m.reply_photo(
-                     photo=f"{IMG_5}",
-                    caption="💬**Usage: /play Give a Title Song To Play Music or join @BETA_BOTSUPPORT**"
+                     photo=f"https://telegra.ph/file/89f5f5e8c1a24b81ed487.jpg",
+                    caption="**Usage: /play [Music Name or Youtube Link]"
                     ,
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("~ Channel ~", url=f"https://t.me/beta_bot_updates"),
-                            InlineKeyboardButton("~ Support ~", url=f"https://t.me/BETA_BOTSUPPORT")
+                            InlineKeyboardButton("~ Channel ~", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                            InlineKeyboardButton("~ Support ~", url=f"https://t.me/{GROUP_SUPPORT}")
                         ],
                         [
                             InlineKeyboardButton("🗑 Close", callback_data="cls")
@@ -258,7 +258,7 @@ async def play(c: Client, m: Message):
             )
         else:
             suhu = await m.reply_text(
-        f"**𝟏𝟎% ▁ ▂ ▄ ▅ ▆ ▇ █  𝟏𝟎𝟎%**\n\n🔄𝐋𝐎𝐀𝐃𝐈𝐍𝐆........"
+        f"**🔄 PROCESSING QUERY**"
     )
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
