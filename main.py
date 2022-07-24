@@ -12,9 +12,7 @@ async def start_bot():
     print("[INFO]: STOPPING BOT & USERBOT")
     await bot.stop()
     await bot.join_chat("beta_bot_updates")
-    await Herox.send_message(
-               SUPPORT,
-            "<b>Congrats!! Music Bot has started successfully!</b>",
+    await Herox.send_message(SUPPORT, "<b>Congrats!! Music Bot has started successfully!</b>",
         )    
                           
 loop = asyncio.get_event_loop()
