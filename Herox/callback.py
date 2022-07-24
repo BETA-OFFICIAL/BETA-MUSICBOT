@@ -53,8 +53,7 @@ async def cb_start(_, query: CallbackQuery):
     await query.edit_message_text(
        f"""ʜᴇʟʟᴏ [✨](https://telegra.ph//file/69b6154eaecdaf3845d9f.jpg) **ᴡᴇʟᴄᴏᴍᴇ [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
  **ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ɢʀᴏᴜᴘ ᴠɪᴅᴇᴏ ᴄᴀʟʟ !!**
- **ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ 💫**
- **ғᴏʀ ᴀɴʏ ʜᴇʟᴘ ᴊᴏɪɴ [BETA SUPPORT](https://t.me/BETA_BOTSUPPORT)**""",
+ **ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇ 💫**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -96,8 +95,7 @@ async def cb_start(_, query: CallbackQuery):
 async def cb_cmd(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""✨ **Hello !**
-» **ғᴏʀ ᴀɴʏ ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅ ᴄʟɪᴄᴋ ʙᴜᴛᴛᴏɴs 🔭 !**
-⚡ Powered by [★彡 JEOL 彡★](https://t.me/JP_Jeol_org)""",
+» **ғᴏʀ ᴀɴʏ ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅ ᴄʟɪᴄᴋ ʙᴜᴛᴛᴏɴs 🔭 !**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -125,9 +123,7 @@ async def cb_basic(_, query: CallbackQuery):
 •  `/pause` - pause song play
 •  `/resume` - resume song play
 •  `/mute` - mute assistant in vc
-•  `/lyrics (song name)`
-
-⚡ Powered By [★彡 JEOL 彡★](https://t.me/JP_Jeol_org) .""",
+•  `/lyrics (song name)`.""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="cb_cmd")]]
         ),
@@ -143,9 +139,7 @@ async def cb_advance(_, query: CallbackQuery):
 • `/id` - Find out your grp and your id // stickers id also
 • `/uptime` - 💻
 • `/rmd` clean all downloads
-• `/clean` - clear storage 
-
-⚡ Powered By [★彡 JEOL 彡★](https://t.me/JP_Jeol_org) .""",
+• `/clean` - clear storage """,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="cb_cmd")]]
         ),
@@ -157,9 +151,7 @@ async def cb_fun(_, query: CallbackQuery):
     await query.edit_message_text(  
         f"""𝙁𝙪𝙣 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨
 
-No Fun Command exist vro It Will Update soon😁
-
-⚡ Powered By [★彡 JEOL 彡★](https://t.me/JP_Jeol_org) .""",
+No Fun Command exist vro It Will Update soon😁.""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="cb_cmd")]]
         ),
@@ -176,5 +168,5 @@ No Fun Command exist vro It Will Update soon😁
 async def close(_, query: CallbackQuery):
     a = await _.get_chat_member(query.message.chat.id, query.from_user.id)
     if not a.can_manage_voice_chats:
-        return await query.answer("ɴɪᴋᴀʟ ʙsᴅᴋ ᴛᴜ ᴀᴅᴍɪɴ ɴᴀʜɪ ʜᴀɪ ɢʀᴘ ᴋᴀ !", show_alert=True)
+        return await query.answer("yᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀ ᴀᴅᴍɪɴ. ꜱᴛʜꜰᴜ😂 !", show_alert=True)
     await query.message.delete()
