@@ -20,7 +20,7 @@
         },
         "LOG_USRNAME": {
             "description": "Fill It With Your Log Group Username Without @. Make sure bot is admin in log GRP.",
-            "required", true
+            "required": true
         },
         "DB_URL": {
             "description": "fill it with your mongo db url",
