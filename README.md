@@ -18,9 +18,9 @@
 
 ## Heroku Deployment
 
-### No Need To Replace Forked Repo In readme.md
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/BETA-OFFICIAL/BETA-MUSICBOT)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://deployheroku.vercel.app/)
+
 
 ## Config Vars
 
