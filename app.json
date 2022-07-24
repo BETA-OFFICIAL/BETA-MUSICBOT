@@ -36,7 +36,7 @@
             "required": false
         },
         "ALIVE_NAME": {
-            "description": "PUT YOUR BOT NAME .",
+            "description": "PUT YOUR NAME HERE.",
             "value": "",
             "required": false
             
@@ -48,7 +48,7 @@
         },
          "DURATION_LIMIT": {
             "description": "PUT YOUR BOT duration time.",
-            "value": "70",
+            "value": "90",
             "required": true
         },
         "GROUP_SUPPORT": {
