@@ -14,12 +14,16 @@
             "description": "fill with the pyrogram session string. Generate Thorough @Sessionstring_genbot",
             "required": true
         },
+        "OWNER_ID": {
+            "description": "Fill it with your TG id",
+            "required": true
+        },
         "BOT_TOKEN": {
             "description": "fill with your bot token from @BotFather",
             "required": true
         },
-        "LOG_USRNAME": {
-            "description": "Fill It With Your Log Group Username Without @. Make sure bot is admin in log GRP.",
+        "LOG_ID": {
+            "description": "Fill It With Your Log channel/Group ID.",
             "required": true
         },
         "DB_URL": {
